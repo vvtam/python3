@@ -14,6 +14,17 @@ tup1 = ();
 Tup1 = (50,);  #只有一个值，后面需要跟, comma
 ```
 
+## tuple里面包含list，list可以改变
+
+```
+tup = tuple(['foo', [1, 2], True])
+tup[1].append(3)
+tup
+('foo', [1, 2, 3], True)
+```
+
+
+
 ## Packing and Unpacking
 
 ```
